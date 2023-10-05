@@ -94,11 +94,11 @@ button:focus {
     background-position: center left;
     /* filter: sepia(15%) grayscale(15%); */
     /* background-image: url(images/header-image.png);     */
-    background-color: #8e9b8c;
+    background-color: #fff;
 }
 
 .top-left-container img {
-    width: 22rem;
+    width: 38rem;
 }
 
 .top-right-container {
@@ -504,8 +504,21 @@ button:focus {
     background-size: cover;
     filter: sepia(30%) grayscale(15%);
     background-position: center left;
-    background-image: url(images/boende.jpeg);
+    /* background-image: url(images/boende.jpeg); */
     position: relative;
+}
+
+.boende-image-container .carousel-item {
+    min-height: 450px;
+    background-size: cover;
+    /* filter: sepia(30%) grayscale(15%); */
+    background-position: center;
+    position: relative;
+}
+
+.boende-image-container .carousel {
+    width: 100%;
+    height: 100%;
 }
 
 .boende-text {
