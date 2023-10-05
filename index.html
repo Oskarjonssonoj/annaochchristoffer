@@ -86,7 +86,31 @@
                     <div>Anna & Stoffe</div>
                 </p>
             </div>
-            <div class="welcome-image-container"></div>
+            <div class="welcome-image-container">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>                        
+                    </div>
+                    <div class="carousel-inner h-100">
+                        <div class="carousel-item active h-100" style="background-image: url('/images/welcome-2.jpg')">
+                        </div>
+                        <div class="carousel-item h-100" style="background-image: url('/images/welcome-3.jpg')">
+                        </div>
+                        <div class="carousel-item h-100" style="background-image: url('/images/welcome-4.jpg')">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div> 
     </section>
 
@@ -96,7 +120,7 @@
                 <h2><u>Boende</u> & kostnad</h2>
                 <p>Vi har bokat vingården Borgo Divino 4-6 oktober vilket inkluderar boende 2 nätter för samtliga bröllopsgäster.</p>
 
-                <p>Kostnad för boende per person (2 nätter) är 215 EUR. Vi återkommer med exakt summa i SEK i samband med intetalningsdatum (inbetalning av boende kommer göras i SEK omkring Februari 2024, enligt gällande valutakurs). Viktigt att notera är att boende ej kommer vara återbetalningsbart.</p>
+                <p class="bold">Kostnad för boende per person (2 nätter) är 215 EUR. Vi återkommer med exakt summa i SEK i samband med intetalningsdatum (inbetalning av boende kommer göras i SEK omkring Februari 2024, enligt gällande valutakurs). Viktigt att notera är att boende ej kommer vara återbetalningsbart.</p>
                 
                 <p>Ni kommer att fördelas olika rum/lägenheter där ni bor 2 eller flera kompisar tillsammans. Vi återkommer med exakt rumsfördelning längre fram.</p>                          
                 
@@ -106,7 +130,7 @@
 
             </div>
             <div class="boende-image-container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -141,7 +165,7 @@
 
     <!-- Toastmasters -->
 
-    <section>
+    <!-- <section>
         <div class="container-toastmasters" id="toastmasters">
             <div class="toastmasters-text">
                 <h2>Säg hej till våra <u>toastmasters</u></h2>
@@ -149,70 +173,49 @@
             </div>
             <div class="toastmasters-image-container"></div>
         </div> 
-    </section>
+    </section> -->
 
     <!-- Program -->
 
     <section>
         <div class="program-container" id="program">
             <div class="program-text-container">
-                <h2 class="program-header">Program</h2>
+                <h2 class="program-header">Helgens program</h2>
                 <ol>
                     <div class="each-event-container">
                         <div class="icon-container">
-                            <img src="/images/wedding-rings.png"/>
+                            <img src="/images/friday.png"/>
                         </div>
                         <li>
                             <div class="event">
-                                <p>15:00</p>
-                                <p>Vigsel</p>
+                                <p>04/10</p>
+                                <p>Fredag</p>
                             </div>
-                            <p class="adress">Jonsereds Kyrka, Anna-Stinas Lid, Jonsered</p>
+                            <p class="adress">Ankomst före kl. 16.30 för incheckning innan Pizzakväll.</p>
                         </li>
                     </div>
                     <div class="each-event-container">
                         <div class="icon-container">
-                            <img src="/images/champagne-glass.png"/>
+                            <img src="/images/saturday.png"/>
                         </div>
                         <li>
                             <div class="event">
-                                <p>16:30</p>
-                                <p>Ankomst - Mingel</p>
+                                <p>05/10</p>
+                                <p>Lördag</p>
                             </div>
-                            <p class="adress">Lekhuset, Otto Salomons väg 10,  Nääs Slöjdområde</p>
+                            <p class="adress">Fritt schema till att utforska närområde eller hänga vid poolen fram till vigsel (beräknas starta någon gång mellan 14.00-16.00).</p>
                         </li>
                     </div>
                     <div class="each-event-container">
                         <div class="icon-container">
-                            <img src="/images/dish.png"/>
+                            <img src="/images/sunday.png"/>
                         </div>
                         <li>
                             <div class="event">
-                                <p>18:00</p>
-                                <p>Middag</p>
+                                <p>06/10</p>
+                                <p>Söndag</p>
                             </div>
-                        </li>
-                    </div>
-                    <div class="each-event-container">
-                        <div class="icon-container">
-                            <img src="/images/disco-ball.png"/>
-                        </div>
-                        <li>
-                            <div class="event">
-                                <p>22:00</p>
-                                <p>Fest</p>
-                            </div> 
-                        </li>
-                    </div>
-                    <div class="each-event-container">
-                        <div class="icon-container">
-                            <img src="/images/the-end.png"/>
-                        </div>
-                        <li>
-                            <div class="event">
-                                <p>02:00</p>
-                                <p>Sista dansen</p>
-                            </div> 
+                            <p class="adress">Utcheckning efter frukost (ca 10.00).</p>
                         </li>
                     </div>
                 </ol>
