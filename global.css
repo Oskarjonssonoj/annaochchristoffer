@@ -1,0 +1,26 @@
+/* GRAY */
+u {
+    border-bottom: 4px solid #8e9b8c;
+}
+
+span {
+    color: #8e9b8c;
+}
+
+.text {
+    width: 50%;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+/* GREEN */
+.background {
+    background-color: #8e9b8c;
+}
+
+u {
+    border-bottom: 4px solid #ffffff61;
+}
+
+span {
+    color: #ffffff61;
+}

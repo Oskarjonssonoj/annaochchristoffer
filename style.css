@@ -11,7 +11,7 @@ html {
 
 body {
     overflow-x: hidden;
-    background-color: #f4f4f4;
+    background-color: #f4f6f2;
     font-size: 15px;
     font-family: 'Noto Sans JP', sans-serif;
     max-width: 1200px;
@@ -94,7 +94,7 @@ button:focus {
     background-position: center left;
     /* filter: sepia(15%) grayscale(15%); */
     /* background-image: url(images/header-image.png);     */
-    background-color: #fff;
+    background-color: #f4f6f2;
 }
 
 .top-left-container img {
@@ -227,7 +227,9 @@ button:focus {
     text-align: center;
     padding: 2.5rem 2rem;
     line-height: 1.5rem;    
+    background-color: #4464;
     flex-direction: column;
+    color: white;
     justify-content: center;
 }
 
@@ -238,7 +240,7 @@ button:focus {
 
 .welcome-to-us-text u {
     text-decoration: none;
-    border-bottom: 4px solid #8e9b8c;
+    border-bottom: 4px solid #ffffff61;
     padding-bottom: 0.2rem;
     /* opacity: 0.5; */
 }
@@ -248,7 +250,7 @@ button:focus {
 }
 
 .welcome-to-us-text span {
-    color: #8e9b8c;
+    color: #ffffff61;
     /* font-size: 2rem; */
     font-weight: 600;
 }
@@ -266,7 +268,6 @@ button:focus {
 
     .welcome-to-us-text {
         width: 50%;
-        border-bottom: 1px solid #d0d0d0;
     }
 }
 
@@ -504,14 +505,12 @@ button:focus {
     background-size: cover;
     filter: sepia(30%) grayscale(15%);
     background-position: center left;
-    /* background-image: url(images/boende.jpeg); */
     position: relative;
 }
 
 .boende-image-container .carousel-item {
     min-height: 450px;
     background-size: cover;
-    /* filter: sepia(30%) grayscale(15%); */
     background-position: center;
     position: relative;
 }
@@ -528,8 +527,6 @@ button:focus {
     line-height: 1.5rem;    
     flex-direction: column;
     justify-content: center;
-    background-color: #8e9b8c;
-    color: #fff;
 }
 
 .boende-text h2 {
@@ -538,7 +535,7 @@ button:focus {
 }
 
 .boende-text a {
-    color: #fff;
+    color: #000;
     transition: 250ms;
     text-decoration: underline;
 }
@@ -549,13 +546,13 @@ button:focus {
 
 .boende-text u {
     text-decoration: none;
-    border-bottom: 4px solid #ffffff61;
+    border-bottom: 4px solid #8e9b8c;
     padding-bottom: 0.2rem;
     /* opacity: 0.5; */
 }
 
 .boende-text span {
-    color: #ffffff61;
+    color: #8e9b8c;
     font-size: 2rem;
 }
 
