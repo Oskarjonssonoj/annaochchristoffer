@@ -127,7 +127,7 @@ button:focus {
 
 .backdrop {
     height: 100%;
-    padding-top: 6rem;
+    padding-top: 5rem;
     padding-bottom: 6rem;
     display: flex;
     justify-content: center;
@@ -214,6 +214,12 @@ button:focus {
     .text-container {
         width: inherit;
         padding: 2rem 8rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .top-left-container img {
+        width: 25rem;
     }
 }
 
@@ -786,6 +792,12 @@ button:focus {
 
     .program-container .ivy {
         width: 22rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .program-container ol li .adress {
+        width: 15rem;
     }
 }
 
