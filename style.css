@@ -14,9 +14,9 @@ body {
     font-size: 15px;
     max-width: 1200px;
     overflow-x: hidden;
-    background-color: #f4f6f2;
-    -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    background-color: #f4f6f2;
     -webkit-overflow-scrolling: touch;
     font-family: 'Noto Sans JP', sans-serif;
 
