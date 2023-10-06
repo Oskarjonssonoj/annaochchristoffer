@@ -304,6 +304,7 @@ button:focus {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
 }
 
 .toastmasters-image-container,
@@ -326,8 +327,6 @@ button:focus {
     line-height: 1.5rem;    
     flex-direction: column;
     justify-content: center;
-    background-color: #8e9b8c;
-    color: white;
 }
 
 .toastmasters-text h2 {
@@ -337,7 +336,7 @@ button:focus {
 
 .toastmasters-text u {
     text-decoration: none;
-    border-bottom: 4px solid #ffffff61;
+    border-bottom: 4px solid #b6c5df6c;
     padding-bottom: 0.2rem;
     /* opacity: 0.5; */
 }
@@ -371,6 +370,12 @@ button:focus {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background-color: #b6c5df6c;
+}
+
+.boende-text-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .jonsered-image-container,
@@ -392,15 +397,12 @@ button:focus {
     padding: 2.5rem 2rem;
     line-height: 1.5rem;    
     flex-direction: column;
-    justify-content: center;
-    /* border-top: 1px solid #d0d0d0; */
-    background-color: #8e9b8c;
-    color: white;
 }
 
 .jonsered-text h2 {
     font-size: 1.4rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .jonsered-text u {
@@ -414,8 +416,17 @@ button:focus {
     font-size: 2rem;
 }
 
+.jonsered-text .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.jonsered-text img {
+    width: 40px;
+}
+
 @media screen and (min-width: 800px) {
-    .container-jonsered {
+    .boende-text-container {
         flex-direction: row;
     }
 
@@ -560,7 +571,7 @@ button:focus {
 
 .boende-text u {
     text-decoration: none;
-    border-bottom: 4px solid #b6c5df6c;;
+    border-bottom: 4px solid #b6c5df6c;
     padding-bottom: 0.2rem;
     /* opacity: 0.5; */
 }
@@ -640,7 +651,7 @@ button:focus {
 
 .faq-text u {
     text-decoration: none;
-    border-bottom: 4px solid #8e9b8c;
+    border-bottom: 4px solid #b6c5df6c;
     padding-bottom: 0.2rem;
     /* opacity: 0.5; */
 }
