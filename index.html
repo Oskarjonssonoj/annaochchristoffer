@@ -320,7 +320,7 @@
                     <label for="Meddelande">Meddelande (Allergier, matpreferenser osv.)</label>
                     <textarea name="Meddelande" cols="30" rows="5" id="message"></textarea>
                 </form>
-                <button onclick="sendEmail()">Skicka</button>
+                <button onclick="sendEmail()" id="send">Skicka</button>
             </div>
         </div>
     </section>
@@ -331,6 +331,9 @@
     
     <script>
         function sendEmail() {
+            const sendBtn = document.getElementById("send")
+            sendBtn.innerHTML = 'Skickar...'
+
             const amountInput = document.querySelector("#amount");
             const nameInput = document.querySelector("#name");
             const songInput = document.querySelector("#song");
@@ -353,13 +356,18 @@
 
             emailjs.send(serviceId, templateId, inputFields)
                 .then(() => {
+                    sendBtn.innerHTML = 'Skickat!';
+                    sendBtn.disabled = true;
+
                     amountInput.value = '1'
                     nameInput.value = ''
                     songInput.value = ''
                     emailInput.value = ''
                     messageInput.value = ''
 
-                    window.scrollTo({top: 0, behavior: 'smooth'});
+                    setTimeout(() => {
+                        window.scrollTo({top: 0, behavior: 'smooth'});
+                    }, 1500)
                 }, (error) => {
                     console.log(error)
                 })
