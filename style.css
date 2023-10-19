@@ -19,7 +19,6 @@ body {
     background-color: #f4f6f2;
     -webkit-overflow-scrolling: touch;
     font-family: 'Noto Sans JP', sans-serif;
-
   }
 
   body::-webkit-scrollbar {
@@ -48,6 +47,10 @@ body {
 
 .carousel-item.top {
     background-position: center center;
+}
+
+section {
+    position: relative;
 }
 
 
@@ -151,6 +154,46 @@ button:focus {
 
 /* WELCOME */
 
+.flower {
+    position: absolute;
+    top: -7rem;
+    width: 10rem;
+}
+
+.leaf {
+    position: absolute;
+    top: -7rem;
+    width: 6rem;
+}
+
+.flower#two {
+    right: 2%;
+}
+
+.flower#three {
+    left: 2%;
+}
+
+.flower#four {
+    right: 0
+}
+
+.leaf#five {
+    right: 15%
+}
+
+.leaf#six {
+    left: 20%
+}
+
+.leaf#seven {
+    left: 50%
+}
+
+.leaf#eight {
+    left: 65%
+}
+
 .container-welcome {
     width: 100%;
     display: flex;
@@ -161,6 +204,7 @@ button:focus {
 .welcome-image-container,
 .welcome-to-us-text {
     width: 100%;
+    z-index: 100;
 }
 
 .welcome-image-container {
@@ -178,7 +222,7 @@ button:focus {
     padding: 2.5rem 2rem;
     flex-direction: column;
     justify-content: center;
-    background-color: #b6c5df6c;
+    background-color: #dae1ea;
 }
 
 .bold {
