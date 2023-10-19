@@ -313,7 +313,7 @@ button:focus {
 
 .boende-text u {
     text-decoration: none;
-    border-bottom: 4px solid #b6c5df6c;
+    border-bottom: 4px solid #dae1ea;
     padding-bottom: 0.2rem;
 }
 
@@ -345,7 +345,7 @@ button:focus {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #b6c5df6c;
+    background-color: #dae1ea;
 }
 
 .resetips-text-container {
@@ -449,7 +449,7 @@ button:focus {
 .toastmasters-text u {
     text-decoration: none;
     padding-bottom: 0.2rem;
-    border-bottom: 4px solid #b6c5df6c;
+    border-bottom: 4px solid #dae1ea;
 }
 
 .toastmasters-text span {
@@ -482,7 +482,7 @@ button:focus {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: #b6c5df6c;
+    background: #dae1ea;
     padding: 2rem 1rem 4rem 1rem;
 }
 
@@ -616,7 +616,7 @@ button:focus {
 .faq-text u {
     text-decoration: none;
     padding-bottom: 0.2rem;
-    border-bottom: 4px solid #b6c5df6c;
+    border-bottom: 4px solid #dae1ea;
 }
 
 .faq-text span {
@@ -647,7 +647,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #b6c5df6c;
+    background-color: #dae1ea;
 }
 
 .osa-container .osa-form-container {
@@ -708,7 +708,8 @@ button:focus {
     font-size: 12px;
 }
 
-.osa-container form button {
+.osa-container button {
+    width: 100%;
     padding: 1rem;
     color: black;
     margin-top: 3rem;
@@ -719,7 +720,7 @@ button:focus {
     border: 1px solid #b6c5dfb6;
 }
 
-.osa-container form button:hover {
+.osa-container button:hover {
     background-color: #e9e9e9;
 }
 

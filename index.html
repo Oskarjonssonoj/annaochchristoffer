@@ -296,8 +296,8 @@
                 <img src="/images/letter.svg" alt="message">
                 <h2 class="program-header">O<span>.</span>S<span>.</span>A</h2>
                 <p class="osa-date">Senast 15:e december.</p>
-                <form action="https://formsubmit.co/el/woxilu" method="POST">
-                    <div class="">
+                <form>
+                    <!-- <div class="">
                         <span>Kan du/ni delta?</span>
                         <div>
                             <input type="radio" name="Status" value="Ja" checked>
@@ -307,20 +307,20 @@
                             <input type="radio" name="Status" value="Nej">
                             <span>Nej</span>
                         </div>
-                    </div>
+                    </div> -->
                     <label for="Antal">Antal Personer</label>
-                    <input type="number" name="Antal" value="1" required min="1" max="10">
+                    <input type="number" name="Antal" value="1" required min="1" max="10" id="amount">
                     <label for="Namn">Namn*</label>
-                    <input type="namn" name="Namn" required>
+                    <input type="namn" name="Namn" required id="name">
                     <span class="desc">* Skriv namn på alla deltagande.</span>
                     <label for="Låtar">Favoritlåt (festlig)</label>
-                    <input type="favoritesong" name="Låtar" required>
+                    <input type="favoritesong" name="Låtar" required id="song">
                     <label for="Mail">Email</label>                    
-                    <input type="email" name="Mail" required>
+                    <input type="email" name="Mail" required id="email">
                     <label for="Meddelande">Meddelande (Allergier, matpreferenser osv.)</label>
-                    <textarea name="Meddelande" cols="30" rows="5"></textarea>
-                    <button type="submit" onclick="preventReload()">Skicka</button>
+                    <textarea name="Meddelande" cols="30" rows="5" id="message"></textarea>
                 </form>
+                <button onclick="sendEmail()">Skicka</button>
             </div>
         </div>
     </section>
@@ -330,11 +330,43 @@
   
     
     <script>
-        function preventReload(e) {
-            e.preventDefault();
+        function sendEmail() {
+            const amountInput = document.querySelector("#amount");
+            const nameInput = document.querySelector("#name");
+            const songInput = document.querySelector("#song");
+            const emailInput = document.querySelector("#email");
+            const messageInput = document.querySelector("#message");
+
+            const publicKey = 'ppQD12v8zjDE1gf5E';
+            const serviceId = 'service_ud6hu7s';
+            const templateId = 'template_8ev5x4r';
+
+            emailjs.init(publicKey);
+
+            const inputFields = {
+                amount: amountInput.value,
+                name: nameInput.value,
+                song: songInput.value,
+                email: emailInput.value,
+                message: messageInput.value,
+            };
+
+            emailjs.send(serviceId, templateId, inputFields)
+                .then(() => {
+                    amountInput.value = '1'
+                    nameInput.value = ''
+                    songInput.value = ''
+                    emailInput.value = ''
+                    messageInput.value = ''
+
+                    window.scrollTo({top: 0, behavior: 'smooth'});
+                }, (error) => {
+                    console.log(error)
+                })
         }
     </script>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
