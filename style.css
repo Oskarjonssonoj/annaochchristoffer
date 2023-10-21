@@ -427,9 +427,9 @@ button:focus {
 .toastmasters-image-container {
     min-height: 450px;
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     /* filter: sepia(10%) grayscale(5%); */
-    background-image: url(images/toastmasters-AC-2.png);
+    background-image: url(images/toastmasters-AC.jpg);
 }
 
 .toastmasters-text {
