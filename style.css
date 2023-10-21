@@ -156,13 +156,13 @@ button:focus {
 
 .flower {
     position: absolute;
-    top: -7rem;
+    top: -5rem;
     width: 10rem;
 }
 
 .leaf {
     position: absolute;
-    top: -7rem;
+    top: -5rem;
     width: 6rem;
 }
 
@@ -179,7 +179,8 @@ button:focus {
 }
 
 .leaf#five {
-    right: 15%
+    right: 7%;
+    z-index: 0;
 }
 
 .leaf#six {
@@ -429,7 +430,7 @@ button:focus {
     background-size: cover;
     background-position: center top;
     /* filter: sepia(10%) grayscale(5%); */
-    background-image: url(images/toastmasters-AC.jpg);
+    background-image: url(images/toastmasters-AC-4.png);
 }
 
 .toastmasters-text {
