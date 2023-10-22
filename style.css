@@ -167,11 +167,11 @@ button:focus {
 }
 
 .flower#two {
-    right: 2%;
+    right: 5%;
 }
 
 .flower#three {
-    left: 2%;
+    left: 0%;
 }
 
 .flower#four {
@@ -179,20 +179,59 @@ button:focus {
 }
 
 .leaf#five {
-    right: 7%;
+    right: 0%;
     z-index: 0;
 }
 
 .leaf#six {
-    left: 20%
+    left: 29%
 }
 
 .leaf#seven {
-    left: 50%
+    left: 50%;
+    transform: rotate(330deg);
 }
 
 .leaf#eight {
     left: 65%
+}
+
+.leaf#nine {
+    left: 0%;
+    transform: rotate(340deg);
+}
+
+.leaf#ten {
+    left: 24%
+}
+
+.leaf#eleven {
+    left: 32%
+}
+
+.flower#twelve {
+    left: 20%;
+}
+
+.flower#thirteen {
+    right: 33%
+}
+
+.flower#fourteen {
+    left: 21%
+}
+
+.flower#fifteen {
+    right: 29%
+}
+
+@media screen and (max-width: 530px) {
+    .flower#twelve,
+    .flower#fourteen,
+    .flower#fifteen,
+    .leaf#six {
+        display: none;
+    }
 }
 
 .container-welcome {
